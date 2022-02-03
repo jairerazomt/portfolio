@@ -1,0 +1,38 @@
+body,
+html, body > div:nth-child(),
+div#__next,
+div#__next > div
+{
+    height: 100%;
+}
+
+.overfloating {
+    height: 50%;
+    overflow: hidden;
+}
+
+.overfloating .card-img-top {
+    transform: scale(1);
+    transition: all 0.25s ease-in-out;
+}
+
+.overfloating .card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.bwfilter {
+	filter: grayscale(100%) !important;
+}
+
+.bwfilter:hover {
+	filter: grayscale(0%) !important;
+}
+
+#nprogress .bar {
+    background: #00bc8c !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: #00bc8c !important;
+    border-left-color: #00bc8c !important;
+}
